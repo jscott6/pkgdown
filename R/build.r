@@ -118,7 +118,6 @@
 #'
 #' By default, the top navigation bar (the "navbar") will contain links to:
 #'
-#' * The home page, with a "home" icon.
 #' * "Get Started", if you have an article with the same name as the package
 #'   (e.g., `vignettes/pkgdown.Rmd`).
 #' * Reference
@@ -141,19 +140,18 @@
 #' ```
 #' navbar:
 #'   structure:
-#'     left:  [home, intro, reference, articles, tutorials, news]
+#'     left:  [intro, reference, articles, tutorials, news]
 #'     right: [github]
 #' ````
 #'
 #' The `components` describes the appearance of each element in the navbar.
 #' It uses the same
-#' syntax as [RMarkdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html#site_navigation).
+#' syntax as [RMarkdown](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html#site-navigation).
 #' The following YAML snippet illustrates some of the most important features.
 #'
 #' ```
 #' navbar:
 #'   components:
-#'     home: ~
 #'     articles:
 #'      text: Articles
 #'      menu:
@@ -174,13 +172,13 @@
 #' ```
 #'
 #' Components can contain sub-`menu`s with headings (indicated by missing
-#' `href`) and separators (indicated by a bunch of `-`). You can also use `icon`s
-#' from [fontawesome](https://fontawesome.com/icons?d=gallery).
+#' `href`) and separators (indicated by a bunch of `-`). You can also use
+#' `icon`s from [fontawesome](https://fontawesome.com/icons?d=gallery).
 #'
-#' This yaml would override the default "articles" component, eliminate
-#' the "home" component, and add a new "twitter" component. Unless you
-#' explicitly mention new components in the `structure` they'll be added
-#' to the far right of the left menu.
+#' This yaml would override the default "articles" component,
+#' and add a new "twitter" component. Unless you explicitly mention new
+#' components in the `structure` they'll be added to the far right of the
+#' left menu.
 #'
 #' @section YAML config - search:
 #' You can use [docsearch](https://community.algolia.com/docsearch/) by algolia

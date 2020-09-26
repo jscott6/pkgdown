@@ -1,5 +1,19 @@
 # pkgdown (development version)
 
+* Missing topics makes the build fail when the environment variable `CI` is set
+  to `"true"` (@ThierryO, #1378).
+
+* The default navbar no longer includes a home icon - this took up precious
+  horizontal space and wasn't very useful since there is already a link to the 
+  home page immediately to its left (#1383).
+
+# pkgdown 1.6.1
+
+* The article index (used for autolinking vignettes across packages) 
+  once again works (#1401).
+
+# pkgdown 1.6.0
+
 ## Major changes
 
 * pkgdown now uses the new [downlit](https://downlit.r-lib.org/) package for all 
